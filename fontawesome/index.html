@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ejemplo de Fontawesome</title>
+  </head>
+  <body>
+    <style>
+      .contenedor-camara-icono {
+        color: grey;
+      }
+      .contenedor-tarjeta-icono {
+        color: #456789;
+      }
+      .contenedor-user-icono {
+        color: #ee7733;
+      }
+
+      .gigante-inventada {
+        font-size: 450px;
+      }
+      .listado-iconos-img {
+        max-width: 100%;
+      }
+    </style>
+
+    <h1>Font Awesome v5</h1>
+    Aquí verás como usar Font-Awesome 5. Si miras el código de este archivo
+    podrás ver instrucciones.
+
+    <section>
+      <h2>Como los uso</h2>
+      <ol>
+        <li>Debes copiar la carpeta completa de Fontawesome a tu proyecto</li>
+        <li>
+          En el footer de la carpeta agregas la etiqueta script que llamará al
+          archivo de javascript que genera los íconos:
+          <xmp>
+              
+            <script defer src="fontawesome-free-5.8.2-web/js/all.min.js"></script>
+        </xmp>
+        </li>
+        <li>
+          <p>
+            Para usarlos tienes que crear un elemento HTML de tipo
+            <strong>i</strong> y agregarle dos clases, <strong>fas</strong>en el
+            caso de iconos genéricos y <strong>fab</strong>
+            cuando son íconos de marcas; luego otra con el prefijo
+            <strong>fa-</strong> seguido del nombre del ícono por ejemplo:
+          </p>
+          <pre>
+                        <code>
+                            <xmp>
+                            <i class="fas fa-user"></i>
+                            <i class="fab fa-facebook"></i>
+                            </xmp>
+                        </code>
+                    </pre>
+          <p>
+            que se ven así:
+            <i class="fas fa-user"></i>
+            <i class="fab fa-facebook"></i>
+          </p>
+        </li>
+      </ol>
+    </section>
+    <section>
+      <h2>Pueden tener distintos colores</h2>
+      <ul>
+        <!-- para cambiarles de color le doy el estilo a su contenedor o papá -->
+        <li class="contenedor-camara-icono">
+          <i class="fas fa-camera"></i>
+        </li>
+        <li class="contenedor-tarjeta-icono">
+          <i class="fas fa-address-card"></i>
+        </li>
+        <li class="contenedor-user-icono">
+          <i class="fas fa-user"></i>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Pueden cambiar de tamaños</h2>
+
+      <!-- para darles tamaño puedo hacerlo a mano con CSS o usar las clases que ya traen -->
+      <div class="iconos-tamanos">
+        <i class="fas fa-camera fa-xs"></i>
+        <i class="fas fa-camera fa-sm"></i>
+        <i class="fas fa-camera fa-lg"></i>
+        <i class="fas fa-camera fa-2x"></i>
+        <i class="fas fa-camera fa-3x"></i>
+        <i class="fas fa-camera fa-5x"></i>
+        <i class="fas fa-camera fa-7x"></i>
+        <i class="fas fa-camera fa-10x"></i>
+        <i class="fas fa-camera gigante-inventada"></i>
+      </div>
+    </section>
+    <section>
+      <h2>Listado de íconos</h2>
+      <p>
+        Font Awesome trae cientos de íconos, para conocerlos todos te hemos
+        preparado <a href="listado-iconos.png"> esta lista</a>
+      </p>
+      <img
+        src="listado-iconos.png"
+        alt="lista de todos los íconos"
+        class="listado-iconos-img"
+      />
+    </section>
+    <!-- Así llamo a la versión en SVG de los íconos -->
+    <script defer src="fontawesome-free-5.8.2-web/js/all.min.js"></script>
+  </body>
+</html>
