@@ -47,7 +47,7 @@ body{
 }
 
 .c-carousel__img{
-    height: 970px !important;
+    height: 600px !important;
     object-fit: cover;
 }
 
@@ -118,14 +118,14 @@ svg:not(:root).svg-inline--fa{
 
 .c-proyectos{
     background: url(img/writing.jpg);
-    background-size: cover;
+    background-size: contain
     height: -webkit-fill-available;
 }
 
 .c-proyectos__overlay{
     background-color: rgba(0, 0, 0, .7);
     width: 1200px;
-    height: 890px;
+    height: 1300px;
 }
 
 .section-title{
@@ -210,6 +210,12 @@ svg:not(:root).svg-inline--fa{
     width: 100%;
     min-height: 100%;
   }
+
+  .parrafo{
+      color: white;
+  }
+  
+  
 
 .c-eventos{
     margin-top: 160px;
